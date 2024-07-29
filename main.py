@@ -62,7 +62,7 @@ def main() -> None:
     message_container = st.container()
 
     for message in st.session_state["messages"]:
-        avatar = "🤖" if message["role"] == "assistant" else "😎"
+        avatar = "🤖" if message["role"] == "assistant" else "☃️"
         with message_container.chat_message(message["role"], avatar=avatar):
             st.markdown(message["content"])
 
